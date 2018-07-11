@@ -2,46 +2,75 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <meta name="vewport" content="width=device-width,inital-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <title>7name/WEB</title>
+    <meta name="description" content="ナナメのwebサイト。プロフィールや制作物を掲載しています。">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div id="container">
       <header>
+        <div id="logo"><img src="img/logo.svg" alt="logo" width="150"></div>
         <h1>7name/WEB</h1>
         <nav>
           <ul>
-            <li><a href="#topic">Topic</a></li>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="#topic">Topic</a>
+            </li>
+            <li>
+              <a href="#profile">Profile</a>
+            </li>
+            <li>
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </nav>
       </header>
 
       <main>
-        <h2><a href="topic">Topic</a></h2>
-        <dl>
-          <dt>いついつ</dt>
-          <dd>なになに</dt>
-          <dt>いついつ</dt>
-          <dd>なになに</dt>
-        </dl>
+        <section>
+          <h2>
+            <a href="topic">Topic</a>
+          </h2>
+          <dl>
+            <dt>いついつ</dt>
+            <dd>なになに</dt>
+            <dt>いついつ</dt>
+            <dd>なになに</dt>
+          </dl>
+        </section>
 
-        <h2><a href="profile">Profile</a></h2>
-        <p><img src="img/logo.svg" alt="logo" width="150">どっこん</p>
+        <section class="profile">
+          <h2>
+            <a href="profile">Profile</a>
+          </h2>
+          <div class="profile">
+            <p>どっこん</p>
+          </div>
+          <div class="works">
+            <p>なになに</p>
+          </div>
+        </section>
 
-        <h2><a href="work">Work</a></h2>
-        <p>あああ</p>
-
-        <h2><a href="contact">Contact</a></h2>
-        <p>あああ</p>
-      </main>
-
+        <section>
+          <h2>
+            <a href="gallery">Gallery</a>
+          </h2>
+          <p>あああ</p>
+        </section>
+        <section>
+          <h2>
+            <a href="contact">Contact</a>
+          </h2>
+          <p>あああ</p>
+        </main>
+      </section>
       <footer>
         <small>© 2018 7name.</smail>
       </footer>
