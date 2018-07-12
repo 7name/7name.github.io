@@ -2,21 +2,22 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <title>7name/WEB</title>
     <meta name="description" content="ナナメのwebサイト。プロフィールや制作物を掲載しています。">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
   </head>
   <body>
     <div id="container">
+
       <header>
-        <div id="logo"><img src="img/logo.svg" alt="logo" width="150"></div>
-        <h1>7name/WEB</h1>
         <nav>
           <ul>
+            <li class="logo"><img src="img/logo.svg" alt="logo" width="80"></li>
             <li>
               <a href="#topic">Topic</a>
             </li>
@@ -31,6 +32,7 @@
             </li>
           </ul>
         </nav>
+        <h1>7name/WEB</h1>
       </header>
 
       <main>
@@ -68,7 +70,44 @@
           <h2>
             <a href="contact">Contact</a>
           </h2>
-          <p>あああ</p>
+          <p>
+            <!-- class, action, methodを変更しないでください -->
+            <form class="formrun" action="https://form.run/api/v1/r/0l9vm40439esrdfzqnjhy0ss" method="post">
+              <!-- ↓自由に要素を追加・編集することができます -->
+              <div>
+                <label>お名前*</label>
+                <input name="お名前" type="text">
+              </div>
+
+              <div>
+                <label>メールアドレス*</label>
+                <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required="data-formrun-required">
+                <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+              </div>
+
+              <div>
+                <label>お問い合わせ*</label>
+                <textarea name="お問い合わせ" data-formrun-required="data-formrun-required"></textarea>
+                <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+              </div>
+
+              <!-- ボット投稿をブロックするためのタグ -->
+              <div class="_formrun_gotcha">
+                <style media="screen">
+                  ._formrun_gotcha {
+                    position: absolute!important;
+                    height: 1px;
+                    width: 1px;
+                    overflow: hidden;
+                  }
+                </style>
+                <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+                <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+              </div>
+
+              <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+            </form>
+          </p>
         </main>
       </section>
       <footer>
