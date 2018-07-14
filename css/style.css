@@ -10,13 +10,28 @@ a img {
 }
 
 /* img */
-.logo {
+.items {
   text-align: center;
+}
+
+.sotial {
+  padding-top: 10rem;
+}
+
+/* back */
+.pagetop {
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+}
+.pagetop:hover
+{
+    opacity: 0.85 ;
 }
 
 /* NAVIGATION */
 nav {
-  padding: 50px 0;
+  padding: 0 0;
 }
 nav ul {
   list-style: none;
@@ -86,12 +101,37 @@ button {
     padding: 20rem 0 19rem;
   }
 
+
+
+  .bg{
+      background: url(http://glatchdesign.com/wp-content/uploads/2016/02/mountain0209.jpg) no-repeat center;
+    background-size: cover;
+      position: relative;
+    height:100%;
+  }
+  .bg::before{
+      /* 透過した黒を重ねる */
+      background-color: rgba(0,0,0,0.5);
+      /* どの範囲に重ねるかを指定 */
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: ' ';
+  }
+  .box{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+
   /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
   background-image: url('../img/bg.png');
   background-size: cover;
   color: #fff;
-  padding-top: 20rem;
-  padding-bottom: 20rem;
+  padding-top: 28rem;
+  padding-bottom: 16rem;
 }
