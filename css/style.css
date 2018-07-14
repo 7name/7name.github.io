@@ -1,48 +1,7 @@
 @charset "UTF-8";
-/* 全体 */
-
-html, body {
-  font-size: 16px;
-  color: #222;
-  background-color: #fff;
-  margin: 0;
-  font-family: sans-serif;
-}
-
-/* ナビメニュー */
-
-nav ul {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  margin: 0;
-  padding: 6px;
-  list-style-type: none;
-}
-
-nav li.logo {
-  margin-right: auto;
-}
-
-nav a {
-  display: block;
-  border-radius: 4px;
-  padding: 12px 24px;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  background-color: #8cae47;
-}
-
 /* 試し書き */
 
-h2 {
-  color: #16b6ab
-}
-
 a {
-  color: #16b6ab;
   text-decoration: none;
 }
 
@@ -50,23 +9,75 @@ a img {
   border-color: none;
 }
 
-a:visited {
-  color: #16b6ab;
+/* NAVIGATION */
+nav {
+  padding: 50px 0;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav.stroke ul li a{
+  position: relative;
+}
+nav.stroke ul li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #1EAEDB;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
 }
 
-a:hover {
-  color: #fff628;
+
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button {
+  border-radius: 100px;
 }
 
-header {
-  margin-top: 1em;
-  padding: 0 16px;
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 8rem 0 7rem;
+  text-align: left;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
 }
 
-main. footer {
-  padding: 0 16px;
-}
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .section {
+    padding: 12rem 0 11rem;
+  }
 
-section {
-  margin-left: 3em 0;
-}
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .section {
+    padding: 20rem 0 19rem;
+  }
