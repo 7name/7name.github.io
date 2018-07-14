@@ -9,6 +9,11 @@ a img {
   border-color: none;
 }
 
+/* img */
+.logo {
+  text-align: center;
+}
+
 /* NAVIGATION */
 nav {
   padding: 50px 0;
@@ -26,7 +31,7 @@ nav ul li a {
   text-decoration: none;
   font-weight: 800;
   text-transform: uppercase;
-  margin: 0 10px;
+  margin: 0 0;
 }
 nav ul li a,
 nav ul li a:after,
@@ -46,12 +51,11 @@ nav.stroke ul li a:after{
   content: '.';
   color: transparent;
   background: #1EAEDB;
-  height: 1px;
+  height: 2px;
 }
 nav.stroke ul li a:hover:after {
   width: 100%;
 }
-
 
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -81,3 +85,13 @@ button {
   .section {
     padding: 20rem 0 19rem;
   }
+
+  /* Values
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.values {
+  background-image: url('../img/bg.png');
+  background-size: cover;
+  color: #fff;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
