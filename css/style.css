@@ -17,8 +17,8 @@ a img {
   text-align: center;
 }
 
-.sotial {
-  padding-top: 10rem;
+.social {
+  border-radius: 100px;
 }
 
 /* pagetop
@@ -102,12 +102,23 @@ background-image: url('../img/bg.png');
 background-size: cover;
 background-position: center;
 color: #fff;
-padding-top: 13rem;
-padding-bottom: 13rem;
+padding-top: 20rem;
+padding-bottom: 20rem;
+}
+.bg-footer {
+  background-image: url('../img/bg.png');
+  background-size: cover;
+  background-position: bottom;
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
 }
 
 /* card
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.card {
+  padding-top: 5rem;
+}
 .card-multiplier {
   margin-bottom: .5rem;
   color: #11DFC7;
