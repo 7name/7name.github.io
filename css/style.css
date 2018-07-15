@@ -71,6 +71,9 @@ nav ul li a {
   text-transform: uppercase;
   margin: 0 0;
 }
+nav ul li a:hover{
+  color: #11DFC7;
+}
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
