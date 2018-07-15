@@ -2,6 +2,7 @@
 
 /* gackground
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
 body {
   background-image: url('../img/bg.jpg');
   background-size: cover;
@@ -22,13 +23,27 @@ body::before {
   content: "";
   z-index: -1;
 }
-
+*/
+/*
 .bg {
-background-size: cover;
-background-position: center;
-color: #fff;
-padding-top: 20rem;
-padding-bottom: 20rem;
+  background-image: url('../img/bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position:relative;
+  color: #fff;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+*/
+.bg {
+  background-image: url('../img/bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
 }
 
 .bg-footer {
@@ -212,6 +227,15 @@ section {
 
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
+  .bg {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: block;
+    color: #fff;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
   article {
     padding: 20rem 0 19rem;
   }
