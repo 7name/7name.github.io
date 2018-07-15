@@ -1,4 +1,41 @@
 @charset "UTF-8";
+
+/* gackground
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+}
+body::before {
+  content: "";
+  background: url('../img/bg.jpg') no-repeat center center;
+  background-size: cover;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg {
+background-size: cover;
+background-position: center;
+color: #fff;
+padding-top: 20rem;
+padding-bottom: 20rem;
+}
+
+.bg-footer {
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -22,10 +59,15 @@ a img {
   position:relative;
 }
 .section-title::before {
-  content: "";
-  background: url('../img/bg_blur.jpg') no-repeat center center;
+  background-image:url('../img/bg_blur.jpg') no-repeat center;
   background-size: cover;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
 }
 
 .section-bg {
@@ -123,35 +165,6 @@ button {
   border-radius: 100px;
 }
 
-/* gackground
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-body {
-  background-image: url('../img/bg.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  background-position: center;
-}
-body::before {
-  content: "";
-  background: url('../img/bg.jpg') no-repeat center center;
-  background-size: cover;
-  position: fixed;
-}
-
-.bg {
-background-size: cover;
-background-position: center;
-color: #fff;
-padding-top: 20rem;
-padding-bottom: 20rem;
-}
-.bg-footer {
-  color: #fff;
-  padding-top: 5rem;
-  padding-bottom: 1rem;
-}
-
 /* card
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .card {
@@ -196,6 +209,9 @@ section {
 
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
+  body {
+    background-image: none;
+  }
   article {
     padding: 20rem 0 19rem;
   }
