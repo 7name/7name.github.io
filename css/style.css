@@ -1,9 +1,4 @@
 @charset "UTF-8";
-
-body {
-  overflow-x: hidden;
-}
-
 a {
   text-decoration: none;
 }
@@ -33,6 +28,7 @@ span {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .pagetop {
  position: fixed;
+ z-index: 2147483647;
  bottom: 20px;
  right: 20px;
 }
