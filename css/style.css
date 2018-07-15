@@ -1,43 +1,6 @@
 @charset "UTF-8";
 /* gackground
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/*
-body {
-  background-image: url('../img/bg.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  background-position: center;
-}
-body::before {
-  background-image: url('../img/bg.jpg') no-repeat left top;
-  background-size: 100% auto;
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 108px
-  content: "";
-  z-index: -1;
-}
-*/
-
-/*
-.bg {
-  background-image: url('../img/bg.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  position:relative;
-  color: #fff;
-  padding-top: 20rem;
-  padding-bottom: 20rem;
-}
-*/
-
 .bg {
   background-image: url('../img/bg.jpg');
   background-attachment: fixed;
@@ -96,7 +59,7 @@ a img {
 }
 
 span {
-  background: #85fff1;
+  background: #ddff9e;
 }
 
 .formrun {
