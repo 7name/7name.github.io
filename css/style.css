@@ -10,15 +10,16 @@ body {
   background-position: center;
 }
 body::before {
-  content: "";
-  background: url('../img/bg.jpg') no-repeat center center;
-  background-size: cover;
+  background-image: url('../img/bg.jpg') no-repeat left top;
+  background-size: 100% auto;
   display: block;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  padding-bottom: 108px
+  content: "";
   z-index: -1;
 }
 
@@ -59,13 +60,15 @@ a img {
   position:relative;
 }
 .section-title::before {
-  background-image:url('../img/bg_blur.jpg') no-repeat center;
-  background-size: cover;
+  background-image:url('../img/bg_blur.jpg') no-repeat left top;
+  background-size: 100% auto;
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  padding-bottom: 108px;
   content: "";
   z-index: -1;
 }
@@ -209,9 +212,6 @@ section {
 
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
-  body {
-    background-image: none;
-  }
   article {
     padding: 20rem 0 19rem;
   }
