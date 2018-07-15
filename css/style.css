@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
