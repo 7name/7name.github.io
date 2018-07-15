@@ -219,6 +219,16 @@ section {
   background-color: #fff;
 }
 
+@media (max-width: 1000px) {
+  .bg {
+    background: url('../img/bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding-top: 10rem;
+    padding-bottom: 9rem;
+  }
+
 /* Bigger than 550 */
 @media (min-width: 550px) {
   article {
@@ -227,15 +237,6 @@ section {
 
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
-  .bg {
-    background-image: url('../img/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    display: block;
-    color: #fff;
-    padding-top: 20rem;
-    padding-bottom: 20rem;
-  }
   article {
     padding: 20rem 0 19rem;
   }
