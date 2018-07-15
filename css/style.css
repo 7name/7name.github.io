@@ -12,7 +12,9 @@ a img {
 }
 
 .section-title {
+  color: #fff
   background-color: #11DFC7;
+  padding-top: 2rem;
 }
 
 .section-bg {
@@ -112,18 +114,20 @@ button {
 
 /* gackground
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
 .bg {
-background-image: url('../img/bg.jpg');
 background-size: cover;
 background-position: center;
 color: #fff;
-padding-top: 10%;
-padding-bottom: 10%;
+padding-top: 20rem;
+padding-bottom: 20rem;
 }
 .bg-footer {
-  background-image: url('../img/bg.jpg');
-  background-size: cover;
-  background-position: bottom;
   color: #fff;
   padding-top: 5rem;
   padding-bottom: 1rem;
@@ -157,10 +161,12 @@ padding-bottom: 10%;
 article {
   padding: 8rem 0 7rem;
   text-align: left;
+  background-color: #fff;
 }
 
 section {
   padding: 5rem 0 4rem;
+  background-color: #fff;
 }
 
 /* Bigger than 550 */
