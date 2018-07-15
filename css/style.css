@@ -8,7 +8,7 @@ a img {
   border-color: none;
 }
 
-.profile-heading {
+.point-heading {
   color: #11DFC7;
 }
 
@@ -19,6 +19,10 @@ a img {
 
 .social {
   border-radius: 100px;
+}
+
+span {
+  background: #11DFC7;
 }
 
 /* pagetop
@@ -70,7 +74,7 @@ nav.stroke ul li a:after{
   width: 0%;
   content: '.';
   color: transparent;
-  background: #1EAEDB;
+  background: #11DFC7;
   height: 2px;
 }
 nav.stroke ul li a:hover:after {
