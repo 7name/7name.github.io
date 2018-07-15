@@ -11,6 +11,10 @@ a img {
   color: #11DFC7;
 }
 
+.section-title {
+  background-color: #11DFC7;
+}
+
 .section-bg {
   background-color: #e7e7e7;
 }
@@ -128,7 +132,7 @@ padding-bottom: 10%;
 /* card
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .card {
-  padding-top: 10rem;
+  padding-top: 2rem;
 }
 .card-multiplier {
   margin-bottom: .5rem;
@@ -156,7 +160,7 @@ article {
 }
 
 section {
-  padding: 4rem 0 3rem;
+  padding: 5rem 0 4rem;
 }
 
 /* Bigger than 550 */
