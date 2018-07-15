@@ -11,6 +11,10 @@ a img {
   color: #11DFC7;
 }
 
+.section-bg {
+  background-color: #e7e7e7;
+}
+
 /* img */
 .items {
   text-align: center;
@@ -22,6 +26,15 @@ a img {
 
 span {
   background: #85fff1;
+}
+
+.formrun {
+  padding-top: 7rem;
+}
+
+.contents {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* pagetop
@@ -41,10 +54,10 @@ span {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav {
   padding: 0 0;
+  text-align: center;
 }
 nav ul {
   list-style: none;
-  text-align: center;
 }
 nav ul li {
   display: inline-block;
@@ -52,7 +65,7 @@ nav ul li {
 nav ul li a {
   color: #fff;
   display: block;
-  padding: 15px;
+  padding: 35px;
   text-decoration: none;
   font-weight: 800;
   text-transform: uppercase;
@@ -89,17 +102,6 @@ button {
   border-radius: 100px;
 }
 
-/* section
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.section {
-  padding: 8rem 0 7rem;
-  text-align: left;
-}
-.section-heading,
-.section-description {
-  margin-bottom: 1.2rem;
-}
-
 /* gackground
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .bg {
@@ -122,7 +124,7 @@ padding-bottom: 10%;
 /* card
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .card {
-  padding-top: 5rem;
+  padding-top: 10rem;
 }
 .card-multiplier {
   margin-bottom: .5rem;
@@ -142,14 +144,25 @@ padding-bottom: 10%;
   width: 95% !important;
 }
 
+/* section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+article {
+  padding: 8rem 0 7rem;
+  text-align: left;
+}
+
+section {
+  padding: 4rem 0 3rem;
+}
+
 /* Bigger than 550 */
 @media (min-width: 550px) {
-  .section {
+  article {
     padding: 12rem 0 11rem;
   }
 
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
-  .section {
+  article {
     padding: 20rem 0 19rem;
   }
