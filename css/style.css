@@ -21,6 +21,12 @@ a img {
   background-position: center;
   position:relative;
 }
+.section-title::before {
+  content: "";
+  background: url('../img/bg_blur.jpg') no-repeat center center;
+  background-size: cover;
+  position: fixed;
+}
 
 .section-bg {
   background-color: #e7e7e7;
@@ -127,11 +133,10 @@ body {
   background-position: center;
 }
 body::before {
-content: "";
-background: url('../img/bg.jpg') no-repeat center center;
-background-size: cover;
-display: block;
-position: fixed;
+  content: "";
+  background: url('../img/bg.jpg') no-repeat center center;
+  background-size: cover;
+  position: fixed;
 }
 
 .bg {
