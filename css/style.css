@@ -138,6 +138,9 @@ padding-bottom: 10%;
   color: #222;
 }
 
+.twitter-timeline {
+  width: 95% !important;
+}
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
