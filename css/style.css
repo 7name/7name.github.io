@@ -12,9 +12,14 @@ a img {
 }
 
 .section-title {
-  color: #fff
-  background-color: #11DFC7;
-  padding-top: 2rem;
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image: url('../img/bg_blur.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position:relative;
 }
 
 .section-bg {
@@ -35,7 +40,7 @@ span {
 }
 
 .formrun {
-  padding-top: 7rem;
+  padding-top: 10rem;
 }
 
 .contents {
@@ -127,11 +132,6 @@ background: url('../img/bg.jpg') no-repeat center center;
 background-size: cover;
 display: block;
 position: fixed;
-top: 0;
-left: 0;
-width: 100vw;
-height: 100vh;
-z-index: -1;
 }
 
 .bg {
