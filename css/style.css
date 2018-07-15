@@ -65,11 +65,12 @@ nav ul li {
 nav ul li a {
   color: #fff;
   display: block;
-  padding: 35px;
+  padding: 8px;
   text-decoration: none;
   font-weight: 800;
   text-transform: uppercase;
-  margin: 0 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 nav ul li a:hover{
   color: #11DFC7;
