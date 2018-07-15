@@ -107,8 +107,8 @@ background-image: url('../img/bg.jpg');
 background-size: cover;
 background-position: center;
 color: #fff;
-padding-top: 20rem;
-padding-bottom: 20rem;
+padding-top: 10%;
+padding-bottom: 10%;
 }
 .bg-footer {
   background-image: url('../img/bg.jpg');
