@@ -15,6 +15,7 @@
 
   <script src="https://sdk.form.run/js/v2/formrun.js"></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="https://sdk.form.run/js/v2/formrun.js"></script>
 
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -199,7 +200,7 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="one.column">
+          <div class="one.column items">
             <img src="img/portfolio/01.jpg" alt="mau">
             <img src="img/portfolio/02.jpg" alt="mau">
             <img src="img/portfolio/03.jpg" alt="mau">
@@ -277,16 +278,17 @@
 
             <div class="six columns" data-formrun-class-if-success="has-success" data-formrun-class-if-error="has-danger" data-formrun-target="name">
               <label for="name">お名前*</label>
-              <input type="text" class="u-full-width" placeholder="Name" id="name" name="name" data-formrun-required data-formrun-class-if-success="form-control-success" data-formrun-class-if-error="form-control-danger">
+              <input type="text" class="u-full-width" placeholder="Name" id="name" name="お名前" data-formrun-required>
             </div>
 
             <div class="six columns" data-formrun-class-if-success="has-success" data-formrun-class-if-error="has-danger" data-formrun-target="email">
               <label for="email">Email*</label>
-              <input type="text" class="u-full-width" placeholder="mail@mail.com" id="email" name="email" data-formrun-required data-formrun-class-if-success="form-control-success" data-formrun-class-if-error="form-control-danger">
+              <input type="text" class="u-full-width" placeholder="mail@mail.com" id="email" name="email" data-formrun-type="email">
             </div>
 
             <label for="category">カテゴリ</label>
-            <select class="u-full-width" id="category" name="category">
+            <select class="u-full-width" id="category" name="カテゴリ" data-formrun-required>
+              <option value-</option>
               <option value="Option 1">おたより</option>
               <option value="Option 2">お仕事のご相談</option>
               <option value="Option 3">VTuberプランのご相談</option>
@@ -295,7 +297,7 @@
 
             <div data-formrun-class-if-success="has-success" data-formrun-class-if-error="has-danger" data-formrun-target="message">
               <label for="text">メッセージ*</label>
-              <textarea class="u-full-width" placeholder="Message..." id="message" name="message" data-formrun-required data-formrun-class-if-success="form-control-success" data-formrun-class-if-error="form-control-danger"></textarea>
+              <textarea class="u-full-width" placeholder="Message..." id="message" name="message" data-formrun-required></textarea>
             </div>
             <!-- ボット投稿をブロックするためのタグ -->
             <div class="_formrun_gotcha">
