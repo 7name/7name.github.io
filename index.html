@@ -15,7 +15,6 @@
 
   <script src="https://sdk.form.run/js/v2/formrun.js"></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script src="https://sdk.form.run/js/v2/formrun.js"></script>
 
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -36,9 +35,9 @@
       <li><a href="#profile">Profile</a></li>/
       <li><a href="#portfolio">Portfolio</a></li>/
       <li><a href="#contact">Contact</a></li>//
-      <li><a href="http://7name.hatenablog.com/"><img src="img/hatenablog.png" alt="logo" width="30" class="social"><br>BLOG</a></li>/
-      <li><a href="https://7name.booth.pm/"><img src="img/booth.png" alt="logo" width="30" class="social"><br>BOOTH</a></li>/
-      <li><a href="https://www.pixiv.net/fanbox/creator/69213"><img src="img/fanbox.png" alt="logo" width="30" class="social"><br>FANBOX</a></li>
+      <li><a href="http://7name.hatenablog.com/"><img src="img/hatenablog.png" alt="logo" width="30" class="circle"><br>BLOG</a></li>/
+      <li><a href="https://7name.booth.pm/"><img src="img/booth.png" alt="logo" width="30" class="circle"><br>BOOTH</a></li>/
+      <li><a href="https://www.pixiv.net/fanbox/creator/69213"><img src="img/fanbox.png" alt="logo" width="30" class="circle"><br>FANBOX</a></li>
     </ul>
   </nav>
   </header>
@@ -278,16 +277,16 @@
 
             <div class="six columns" data-formrun-class-if-success="has-success" data-formrun-class-if-error="has-danger" data-formrun-target="name">
               <label for="name">お名前*</label>
-              <input type="text" class="u-full-width" placeholder="Name" id="name" name="お名前" data-formrun-required>
+              <input type="text" class="u-full-width" placeholder="Name" id="name" name="お名前" data-formrun-required data-formrun-class-if-success="form-control-success" data-formrun-class-if-error="form-control-danger">
             </div>
 
             <div class="six columns" data-formrun-class-if-success="has-success" data-formrun-class-if-error="has-danger" data-formrun-target="email">
               <label for="email">Email*</label>
-              <input type="text" class="u-full-width" placeholder="mail@mail.com" id="email" name="email" data-formrun-type="email">
+              <input type="text" class="u-full-width" placeholder="mail@mail.com" id="email" name="email" data-formrun-type="email" data-formrun-class-if-success="form-control-success" data-formrun-class-if-error="form-control-danger">
             </div>
 
             <label for="category">カテゴリ</label>
-            <select class="u-full-width" id="category" name="カテゴリ" data-formrun-required>
+            <select class="u-full-width" id="category" name="カテゴリ" data-formrun-required data-formrun-class-if-success="form-control-success" data-formrun-class-if-error="form-control-danger">
               <option value-</option>
               <option value="Option 1">おたより</option>
               <option value="Option 2">お仕事のご相談</option>
@@ -297,7 +296,7 @@
 
             <div data-formrun-class-if-success="has-success" data-formrun-class-if-error="has-danger" data-formrun-target="message">
               <label for="text">メッセージ*</label>
-              <textarea class="u-full-width" placeholder="Message..." id="message" name="message" data-formrun-required></textarea>
+              <textarea class="u-full-width" placeholder="Message..." id="message" name="message" data-formrun-required data-formrun-class-if-success="form-control-success" data-formrun-class-if-error="form-control-danger"></textarea>
             </div>
             <!-- ボット投稿をブロックするためのタグ -->
             <div class="_formrun_gotcha">
