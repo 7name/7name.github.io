@@ -17,6 +17,10 @@ p, label {
   text-align: left;
 }
 
+.date {
+  text-align: right;
+}
+
 figure {
     display: inline-block;
     margin: 0px 3px 6px 0px;
