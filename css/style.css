@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* gackground
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.twitter-timeline {
+  width: 95% !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -11,6 +15,17 @@ a img {
 
 p, label {
   text-align: left;
+}
+
+figure {
+    display: inline-block;
+    margin: 0px 3px 6px 0px;
+}
+
+.trim {
+  object-fit: cover;
+  width: 100px;
+  height: 200px;
 }
 
 .items {
@@ -77,7 +92,7 @@ span {
 
 .pagetop {
   position: fixed;
-  z-index: 2147483647;
+  z-index: 100;
   bottom: 20px;
   right: 20px;
 }
@@ -172,9 +187,6 @@ nav.stroke ul li a:hover:after {
   color: #222;
 }
 
-.twitter-timeline {
-  width: 95% !important;
-}
 
 /* section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
