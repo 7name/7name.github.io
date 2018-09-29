@@ -41,7 +41,7 @@ figure {
 }
 
 span {
-  background: #ddff9e;
+  background: #ffe674;
 }
 
 .formrun {
@@ -123,7 +123,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #000;
   display: block;
   padding: 8px;
   text-decoration: none;
