@@ -209,8 +209,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #11DFC7;
-  border-color: #11DFC7; }
+  background-color: #0cc8bb;
+  border-color: #0cc8bb; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -269,7 +269,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #11DFC7;
+  border: 1px solid #0cc8bb;
   outline: 0; }
 label,
 legend {

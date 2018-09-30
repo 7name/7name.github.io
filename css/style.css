@@ -54,7 +54,7 @@ span {
 }
 
 .point-heading {
-  color: #11DFC7;
+  color: #0cc8bb;
 }
 
 .bg {
@@ -134,7 +134,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #11DFC7;
+  color: #0cc8bb;
 }
 
 nav ul li a, nav ul li a:after, nav ul li a:before {
@@ -154,7 +154,7 @@ nav.stroke ul li a:after {
   width: 0%;
   content: '.';
   color: transparent;
-  background: #11DFC7;
+  background: #0cc8bb;
   height: 2px;
 }
 
@@ -178,7 +178,7 @@ nav.stroke ul li a:hover:after {
 
 .card-multiplier {
   margin-bottom: .5rem;
-  color: #11DFC7;
+  color: #0cc8bb;
 }
 
 .card-heading {
