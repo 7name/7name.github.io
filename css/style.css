@@ -1,4 +1,73 @@
 @charset "UTF-8";
+
+/* slide in effect
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.slide-in.--active {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+.slide-in > * {
+  opacity: 0;
+}
+.slide-in.--active > * {
+  transition-delay: 0.3s;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-name: slide-in;
+
+  opacity: 0;
+}
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.slide-in.--active::after {
+  visibility: visible;
+  transition-delay: 0.3s;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-name: slide-in-after;
+
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #0cc8bb;
+}
+@keyframes slide-in-after {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+  }
+}
 /* gackground
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .twitter-timeline {
@@ -235,3 +304,6 @@ section {
       article {
         padding: 20rem 0 19rem;
       }
+    }
+  }
+}
