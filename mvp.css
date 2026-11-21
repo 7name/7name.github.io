@@ -101,16 +101,18 @@ section pre {
 }
 
 section aside {
-    border: 1px solid var(--color-bg-secondary);
+    border: 2px solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow) var(--color-shadow);
     margin: 1rem;
-    padding: 1.25rem;
+    padding: 1rem;
+    transition: border-color 0.15s;
     width: var(--width-card);
 }
 
 section aside:hover {
-    box-shadow: var(--box-shadow) var(--color-bg-secondary);
+    border-color: var(--color-link);
+    box-shadow: var(--box-shadow) var(--color-shadow);
 }
 
 [hidden] {
@@ -314,9 +316,6 @@ a:active {
     filter: brightness(var(--active-brightness));
 }
 
-a:hover {
-    filter: brightness(var(--hover-brightness)) drop-shadow(0px 0px 0px #66a368);
-}
 
 a b,
 a em,
@@ -372,9 +371,9 @@ a sns {
     border-radius: var(--border-radius);
     color: var(--color-link);
     display: inline-block;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     font-weight: normal;
-    margin: 7px;
+    margin: 2px;
 }
 
 article aside a {
@@ -477,7 +476,7 @@ label {
 
 /* Popups */
 dialog {
-    max-width: 90%;
+    max-width: 100%;
     max-height: 85dvh;
     margin: auto;
     padding-block: 0;
@@ -613,4 +612,87 @@ blockquote footer {
 *::-webkit-scrollbar-thumb {
     background-color: rgb(202, 202, 232);
     border-radius: 10px;
+}
+
+/* 7name.site Works 用（2026-11-21 追加）
+   カードを横並び行の高さに引き伸ばさない（画像サイズで余白が増えるのを防ぐ）。
+   ジャンル見出しは1行だけにして、上下の余白を詰める。 */
+#works {
+     align-items: flex-start;
+}
+
+#works header.genre {
+    margin: 1.75rem 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+#works header.genre:first-of-type {
+    margin-top: 0.5rem;
+}
+
+#works header.genre h3 {
+    margin: 0;
+}
+
+#works button.work-open img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+#works button.work-open {
+    background: none;
+    border: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#works button.work-open:hover,
+#works button.work-open:active {
+    filter: none;
+}
+
+#works dialog {
+    width: fit-content;
+    max-width: min(92vw, 64rem);
+}
+#works dialog img {
+    display: block;
+    height: auto;
+    margin: 1rem auto;
+    max-width: 100%;
+    max-height: 68dvh;
+}
+#works dialog .dlg-top:focus {
+    outline: none;
+}
+
+#works aside.mini {
+    width: 132px;
+    margin: 0.5rem;
+    padding: 0.75rem;
+}
+
+#works aside.mini h4 {
+    font-size: 0.85rem;
+    margin: 0.5rem 0 0;
+}
+
+.to-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background: var(--color-link);
+    color: var(--color-bg);
+    text-decoration: none;
 }
